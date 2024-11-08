@@ -3,9 +3,7 @@ site_url: https://kanad13.github.io/super_tech/
 #repo_url: https://github.com/kanad13/kunal-pathak/
 
 nav:
-  - Home:
-      - Overview: home/index.md
-      - Call to Action: home/cta.md
+  - Home: index.md
   - About Us: aboutus.md
   - Services:
       - IT Consulting: services/it-consulting.md
