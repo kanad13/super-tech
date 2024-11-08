@@ -1,0 +1,178 @@
+site_name: Super Tech
+site_url: https://kanad13.github.io/super_tech/
+#repo_url: https://github.com/kanad13/kunal-pathak/
+
+nav:
+  - Home:
+      - Overview: home/index.md
+      - Call to Action: home/cta.md
+  - About Us: aboutus.md
+  - Services:
+      - IT Consulting: services/it-consulting.md
+      - AI Development: services/ai-development.md
+      - ML Model Training: services/ml-model-training.md
+      - Data Analytics: services/data-analytics.md
+      - Industries Served: services/industries-served.md
+  - Products:
+      - Spatial Analysis: products/spatial-analysis.md
+      - Privacy-First AI Chatbots: products/privacy-first-ai-chatbots.md
+  - Projects:
+      - Legacy BI Migration: projects/legacy-bi-migration.md
+      - Predictive Analytics for Public Services: projects/predictive-analytics-public-services.md
+  #  - Blog/News:
+  #     - Articles and Insights: blog/articles-insights.md
+  #      - Educational Content: blog/educational-content.md
+  - Team:
+      - Meet the Team: team/meet-the-team.md
+      - Culture and Values: team/culture-values.md
+  - Careers:
+      - Job Openings: careers/job-openings.md
+      - Why Join Us: careers/why-join-us.md
+  - Testimonials:
+      - Client Feedback: testimonials/client-feedback.md
+      - Client Logos: testimonials/client-logos.md
+  #  - Resources:
+  #     - Whitepapers and Ebooks: resources/whitepapers-ebooks.md
+  #      - Webinars and Videos: resources/webinars-videos.md
+  #      - Documentation: resources/documentation.md
+#  - FAQ: faq.md
+#  - Privacy Policy and Terms of Service:
+#      - Privacy Policy: legal/privacy-policy.md
+#      - Terms of Service: legal/terms-of-service.md
+theme:
+  name: material
+  font:
+    false #https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/#autoloading
+    #text: Roboto
+    #code: Roboto Mono
+  icon:
+    logo: material/rocket-launch-outline
+  favicon: assets/rocket-launch-outline.png
+  palette:
+    scheme: default # custom_01
+    primary: blue #custom # header, the sidebar, text links, etc. - these are default values
+    accent: blue #custom # hovered links, buttons and scrollbars -  these are default values
+
+  features:
+    - navigation.instant # Material for MkDocs now behaves like a Single Page Application
+    - navigation.instant.progress # progress indicator on slow connections
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.prune
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+    - toc.integrate # disabling this will make the right sidebar come to life
+    - header.autohide
+    - content.tabs.link # all content tabs across the whole site will switch to the same label
+    - content.code.copy # code copy button
+    - content.code.select # code selection button
+    - content.code.annotate # code annotations
+####
+
+plugins:
+  - social:
+      enabled: true
+  - privacy
+  - search
+  - glightbox: # customization options here - https://github.com/blueswen/mkdocs-glightbox
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
+  - blog:
+      post_date_format: full
+      post_url_format: "{slug}"
+      blog_toc: true
+      post_readtime: false
+      categories: false
+####
+
+copyright: >
+  Copyright &copy; 2024 Super Tech -
+  <a href="#__consent">Change cookie settings</a>
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kanad13
+  consent:
+    title: Cookie & Analytics consent
+    description: >-
+      This site uses cookies and analytics to enhance your browsing experience and analyze traffic. This data helps to measure the effectiveness of the site's content and improve your overall experience. By clicking 'Accept', you consent to the use of cookies and analytics.
+      <br>
+      <a href="https://www.iubenda.com/privacy-policy/30308009" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+      <a href="https://www.iubenda.com/privacy-policy/30308009/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+
+    actions:
+      - accept
+      - reject
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#attribute-lists
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - toc:
+      #title: On this page
+      permalink: true
+      #toc_depth: 2
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      auto_title: true
+      use_pygments: true
+      anchor_linenums: true
+      linenums: true
+      linenums_style: pymdownx-inline
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+      custom_checkbox: false
+  - pymdownx.arithmatex:
+      generic: true
+#extra_javascript:
+#  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+#  - 810-javascripts/tablesort.js
+#  - 810-javascripts/mathjax.js
+#  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+#extra_css:
+#  - 820-stylesheets/extra.css
