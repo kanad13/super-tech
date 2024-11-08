@@ -1,0 +1,137 @@
+/*
+======
+======
+======
+ICONS WITH ANIMATIONS
+https: //squidfunk.github.io/mkdocs-material/reference/icons-emojis/#with-animations
+======
+======
+======
+*/
+@keyframes heart {
+
+	0%,
+	40%,
+	80%,
+	100% {
+		transform: scale(1);
+	}
+
+	20%,
+	60% {
+		transform: scale(1.15);
+	}
+}
+
+.heart {
+	animation: heart 1000ms infinite;
+}
+
+@keyframes rocket {
+
+	0%,
+	40%,
+	80%,
+	100% {
+		transform: scale(1);
+	}
+
+	20%,
+	60% {
+		transform: scale(1.15);
+	}
+}
+
+.face-smile {
+	animation: face-smile 1000ms infinite;
+}
+
+@keyframes face-smile {
+
+	0%,
+	40%,
+	80%,
+	100% {
+		transform: scale(1);
+	}
+
+	20%,
+	60% {
+		transform: scale(1.15);
+	}
+}
+
+.rocket {
+	animation: face-smile 1000ms infinite;
+}
+
+/*
+======
+======
+======
+CUSTOM ADMONITIONS
+https: //squidfunk.github.io/mkdocs-material/reference/admonitions/?h=adm#custom-admonitions
+
+======
+======
+======
+*/
+
+:root {
+	--md-admonition-icon--tick-mark: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>check</title><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg>')
+}
+
+.md-typeset .admonition.tick-mark,
+.md-typeset details.tick-mark {
+	border-color: #000000
+		/*313aa6*/
+}
+
+.md-typeset .tick-mark>.admonition-title,
+.md-typeset .tick-mark>summary {
+	background-color: #e9ecef;
+
+}
+
+.md-typeset .tick-mark>.admonition-title::before,
+.md-typeset .tick-mark>summary::before {
+	background-color: #000000;
+	-webkit-mask-image: var(--md-admonition-icon--tick-mark);
+	mask-image: var(--md-admonition-icon--tick-mark);
+}
+
+/*
+======
+======
+======
+CUSTOM COLORS - 
+
+https: //squidfunk.github.io/mkdocs-material/setup/changing-the-colors/?h=color#custom-color-schemes
+
+https: //github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/stylesheets/main/_colors.scss
+/*
+======
+======
+======
+*/
+[data-md-color-scheme="custom_01"] {
+
+
+	/* banner background*/
+	--md-primary-fg-color: #EE0F0F;
+
+	/* main background color*/
+	--md-default-bg-color: #e9ecef;
+	/* main text color*/
+	--md-typeset-color: #39dc19;
+
+	/* footer color;*/
+	--md-footer-bg-color: #39dc19;
+
+	/* text color for tab elements;*/
+	--md-default-fg-color: #39dc19;
+	/* admonition colors*/
+	--md-admonition-fg-color: #1809ef;
+	--md-admonition-bg-color: #e9ecef;
+
+}
