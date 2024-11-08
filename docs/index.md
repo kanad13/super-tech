@@ -2,41 +2,68 @@
 
 At Super Tech, we are dedicated to providing innovative IT solutions that drive success and growth for businesses of all sizes. Our team of experts leverages the latest technologies to deliver customized products and services that meet your unique needs.
 
-## Our Mission
+## Our Services
 
-Our mission is to empower businesses with cutting-edge technology solutions that enhance efficiency, productivity, and profitability. We strive to be your trusted partner in navigating the digital landscape.
+<div class="grid cards" markdown="1">
+- :fontawesome-solid-laptop-code: [IT Consulting](services/it-consulting.md)
 
-## What We Offer
+    ---
 
-### IT Consulting
+    Providing expert advice to optimize your IT infrastructure.
 
-Our strategic IT consulting services help you align your technology initiatives with your business objectives. We provide expert guidance on IT strategy development, technology roadmaps, and digital transformation.
+- :fontawesome-solid-brain: [AI Development](services/ai-development.md)
 
-### AI Development
+      ---
 
-Harness the power of artificial intelligence with our AI development services. We specialize in custom AI solutions, machine learning models, natural language processing, and computer vision.
+      Developing cutting-edge AI solutions tailored to your needs.
 
-### ML Model Training
+- :fontawesome-solid-chart-line: [ML Model Training](services/ml-model-training.md)
 
-Our machine learning model training services cover the entire lifecycle of ML projects, from data preparation and model selection to training, evaluation, and deployment.
+      ---
 
-### IT Support and Managed Services
+      Training machine learning models for accurate predictions.
 
-Ensure your IT systems run smoothly and efficiently with our comprehensive IT support and managed services. Our proactive approach to IT management helps prevent issues before they arise.
+- :fontawesome-solid-headset: [Data Analytics](services/data-analytics.md)
+
+      ---
+
+      Analyzing data to uncover actionable insights.
+
+  </div>
 
 ## Our Products
 
-### Privacy-First AI Chatbots
+<div class="grid cards" markdown="1">
+- :fontawesome-solid-lock: [Privacy-First AI Chatbots](products/privacy-first-ai-chatbots.md)
 
-Transform your customer interactions with our secure, privacy-focused AI chatbot solutions. Our versatile chatbot platform puts data protection first while delivering powerful conversational AI capabilities.
+    ---
 
-### Spatial Analysis Suite
+    AI chatbots designed with privacy in mind.
 
-Unlock the potential of your spatial data with our advanced Spatial Analysis Suite. Designed for professionals who need to understand complex geographical relationships and patterns, our solution delivers powerful analytics capabilities in an intuitive platform.
+- :fontawesome-solid-map: [Spatial Analysis Suite](products/spatial-analysis.md)
 
-### Predictive Analytics Tools
+      ---
 
-Leverage our predictive analytics tools to gain actionable insights from your data. Our solutions help you forecast trends, optimize operations, and make data-driven decisions with confidence.
+      Tools for advanced spatial data analysis.
+
+  </div>
+
+## Our Projects
+
+<div class="grid cards" markdown="1">
+- :fontawesome-solid-lock: [Legacy BI Migration](projects/legacy-bi-migration.md)
+
+    ---
+
+    Migrating legacy BI systems to modern platforms.
+
+- :fontawesome-solid-lock: [Predictive Analytics](projects/predictive-analytics-public-services.md)
+
+      ---
+
+      Implementing predictive analytics for public services.
+
+  </div>
 
 ## Why Choose Super Tech?
 
