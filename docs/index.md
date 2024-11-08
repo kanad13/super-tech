@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Welcome to Super Tech
 
 At Super Tech, we are dedicated to providing innovative IT solutions that drive success and growth for businesses of all sizes. Our team of experts leverages the latest technologies to deliver customized products and services that meet your unique needs.

@@ -10,7 +10,6 @@ nav:
       - AI Development: services/ai-development.md
       - ML Model Training: services/ml-model-training.md
       - Data Analytics: services/data-analytics.md
-      - Industries Served: services/industries-served.md
   - Products:
       - Spatial Analysis: products/spatial-analysis.md
       - Privacy-First AI Chatbots: products/privacy-first-ai-chatbots.md
@@ -64,7 +63,7 @@ theme:
     - search.highlight
     - search.share
     - toc.follow
-    - toc.integrate # disabling this will make the right sidebar come to life
+    # - toc.integrate # disabling this will make the right sidebar come to life
     - header.autohide
     - content.tabs.link # all content tabs across the whole site will switch to the same label
     - content.code.copy # code copy button
